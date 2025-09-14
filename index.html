@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h2>Port<span>folio</span></h2>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer & Designer</p>
+                <h1>Hi, I'm <span>HARSH SINGH</span><br>From JAMSHEDPUR</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="D:\web tech\image\IMG-20240113-WA0047.jpg" alt="Profile">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I'm a passionate web developer with 2 years of experience creating beautiful, functional websites and applications. I specialize in front-end development with a focus on user experience and responsive design.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <!-- <li><span>App Development</span><br>Building Android/iOS apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!-- <li><span>2021 - Current</span><br>Senior Developer at TechCorp</li> -->
+                            <li><span>2025-05-24 to 2025-07-18</span><br>Project Intern – Attendance Management System (Hindustan Copper Limited)</li>
+                            <!-- <li><span>2017 - 2019</span><br>UI/UX Designer at Creative Agency</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>Btech in AI&DS from C. V. Raman Global University</li>
+                            <!-- <li><span>2015</span><br>BSc in Computer Science from UC Berkeley</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and interactive websites using modern technologies like HTML5, CSS3, JavaScript, and React.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces with a focus on user experience and modern design principles.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fab fa-app-store"></i>
+                    <h3>App Development</h3>
+                    <p>Building cross-platform mobile applications using React Native and other modern frameworks.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="E-commerce Website">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>An online store with product filtering, cart functionality, and secure checkout.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A platform for connecting people with shared interests and facilitating discussions.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Music App">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>A streaming service with personalized recommendations and curated playlists.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fas fa-paper-plane"></i> harshsinghgts@gmail.com.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +1 (123) 9279883479</p>
+                    <!-- <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    <div class="social-icons">
+                        <!-- <a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter-square"></i></a> -->
+                        <a href="https://www.instagram.com/_harsh.singh12/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harsh-singh-38b236280/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
